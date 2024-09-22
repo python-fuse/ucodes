@@ -1,12 +1,16 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { ReactNode } from "react";
 import NavBar from "./NavBar";
-import BlurFade from "./magicui/blur-fade";
+import Header from "./Header";
 
-const Layout: React.FC = () => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Outlet />
+      <Header />
+      {children}
       <NavBar />
     </>
   );

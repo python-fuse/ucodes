@@ -6,8 +6,7 @@ import {
   BsTwitterX,
   BsYoutube,
 } from "react-icons/bs";
-import { FaBlog, FaHome } from "react-icons/fa";
-
+import { Home, Book } from "lucide-react";
 const NavBar = () => {
   const [animate, setAnimate] = useState<boolean>(false);
 
@@ -22,10 +21,10 @@ const NavBar = () => {
     >
       <div className="p-2 flex items-center gap-x-1">
         <button className="p-2 nav-btn">
-          <FaHome className="nav-icon" />
+          <Home className="nav-icon" />
         </button>
         <button className="p-2 nav-btn">
-          <FaBlog className="nav-icon" />
+          <Book className="nav-icon" />
         </button>
       </div>
 
