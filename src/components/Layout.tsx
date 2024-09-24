@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import NavBar from "./NavBar";
+import NavBar from "./Dock";
 import Header from "./Header";
 
 interface LayoutProps {
@@ -11,6 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <Header />
       {children}
+      {/* <MouseArea /> */}
       <NavBar />
     </>
   );

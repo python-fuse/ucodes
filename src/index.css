@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -107,5 +111,5 @@
   @apply bg-primary shadow-sm text-white duration-300 hover:shadow-lg p-2 rounded-lg w-32 text-center;
 }
 .btn-outline {
-  @apply bg-transparent border duration-300 shadow-sm hover:shadow-lg  p-2 rounded-lg w-32 text-center;
+  @apply bg-transparent border duration-300 shadow-sm hover:bg-primary/20 shadow-purple-600   p-2 rounded-lg w-32 text-center;
 }
