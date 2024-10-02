@@ -1,9 +1,8 @@
 import avatar from "../assets/umar.jpg";
-import Meteors from "./magicui/meteors";
 const Hero = () => {
   return (
     <>
-      <div className="flex text-start mt-20 space-x-8 items-center mx-auto">
+      <div className="flex text-start mt-20 mb-14 space-x-8 items-center mx-auto">
         <div className="border-2 border-primary rounded-full">
           <img
             src={avatar}

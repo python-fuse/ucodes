@@ -33,9 +33,11 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col space-y-5 h-screen">
+    <div className="flex flex-col space-y-5 ">
       <div className="flex flex-col gap-y-2">
-        <h2 className="text-2xl">Hey, I'm Umar</h2>
+        <h2 className="text-2xl">
+          Hey, I'm <span className="text-primary">Umar</span>
+        </h2>
         <div className="h-2 rounded-full bg-primary w-14"></div>
       </div>
 
