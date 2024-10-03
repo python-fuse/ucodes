@@ -103,3 +103,46 @@ export const projects = [
     image: fbn,
   },
 ];
+
+export const experiences = [
+  {
+    title: "Software Engineer",
+    company: "Upwork",
+    duration: "December 2023 - Present",
+    description:
+      "Providing freelance software development services on Upwork, specializing in building dynamic web applications. Collaborating with clients globally to deliver high-quality full-stack projects and tailored solutions for their business needs.",
+  },
+  {
+    title: "Software Engineer",
+    company: "Bloocode Technologies",
+    duration: "June 2024 - Present",
+    description:
+      "Contributing as a Frontend Engineer, responsible for creating intuitive and responsive user interfaces. Collaborating closely with cross-functional teams to develop scalable, performant web applications that enhance the user experience.",
+    techStack: [
+      // "TypeScript",
+      // "JavaScript",
+      // "React",
+      "Next.js",
+      "React Query",
+      "Tailwind CSS",
+      "Headless UI",
+      "NextUI",
+    ],
+  },
+  {
+    title: "Software Development Intern",
+    company: "HNGxAfrica",
+    duration: "December 2023 - July 2024",
+    description:
+      "Strengthened my software engineering skills by building full-stack web applications as part of a large-scale internship program. Collaborated with interns across various tracks, including UI/UX Design, to deliver complete web solutions from concept to deployment.",
+    techStack: ["React", "Firebase", "Appwrite", "Tailwind CSS"],
+  },
+  {
+    title: "Software Development Intern",
+    company: "Code Alpha",
+    duration: "September 2023 - December 2024",
+    description:
+      "Worked as a software development intern, focused on building and improving user interfaces. Contributed to fixing bugs and enhancing existing pages to create more functional and visually appealing web experiences.",
+    techStack: ["React", "Tailwind CSS", "ChakraUI", "Firebase"],
+  },
+];
