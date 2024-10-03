@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Portfolio v1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio site! This is the first version of my personal portfolio where I showcase my projects, skills, and experiences.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [About Me](#about-me)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Contact](#contact)
 
-## Expanding the ESLint configuration
+## About Me
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+A brief introduction about yourself. Mention your background, interests, and what you are passionate about.
 
-- Configure the top-level `parserOptions` property like this:
+## Projects
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Student Hub
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Description:** A fullstack web application for students to connect and share resources.
+- **Technologies Used:** React,Firebase,TailwindCSS and ChakraUI.
+- **Link:** [Project Link](https://student-hub-beta.vercel.app/)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### FirstBank Collection System
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Description:** A loan collection management system for oldest the bank in Nigeria. I worked as a Frontend Engineer on this Project at Bloocode Technologies.
+- **Technologies Used:** NextJs,TypeScript,HeadlessUI.
+- **Link:** [Project Link](https://firstbank-collection-frontend.vercel.app/)
+
+## Skills
+
+- Skill 1
+- Skill 2
+- Skill 3
+
+## Contact
+
+Feel free to reach out to me via [hauwamuktar880@gmail.com](mailto:hauwamuktar880@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/umar-muktar-552a06268).
+
+Thank you for visiting my portfolio!
