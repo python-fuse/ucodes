@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BsMoon, BsSun } from "react-icons/bs";
+import { BsMoon } from "react-icons/bs";
 import Tooltip from "./Tooltip";
 import BlurFade from "./magicui/blur-fade";
 import { handleHoverIn, handleHoverOut, HandB, GLXY } from "../lib/utils";
