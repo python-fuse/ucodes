@@ -35,7 +35,7 @@ const Hero = () => {
               Hire Me
             </a>
             <a
-              href="src/assets/Umar_Muktar_Resume.pdf"
+              href="/Umar_Muktar_Resume.pdf"
               className="btn-outline"
               target="_blank"
               rel="noopener noreferrer"
