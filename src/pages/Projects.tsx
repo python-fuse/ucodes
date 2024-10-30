@@ -6,7 +6,7 @@ import { FaGithub, FaNodeJs, FaReact, FaWhatsapp } from "react-icons/fa";
 
 const Projects: React.FC = () => {
   return (
-    <div className="flex flex-col  ">
+    <div className="flex flex-col  space-y-4">
       <div className="flex flex-col gap-y-2">
         <h2 className="text-2xl">
           My <span className="text-primary">Projects</span>
@@ -17,14 +17,15 @@ const Projects: React.FC = () => {
           A collection my previous personal and paid projects
         </p>
       </div>
-      <div className="flex gap-4 items-center">
-        <div className="w-2/4 flex flex-col gap-4">
+
+      <div className="flex flex-col md:flex-row gap-4 ">
+        <div className="md:w-2/4 flex flex-col gap-4">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
 
-        <div className="relative flex h-[400px] flex-1 flex-col items-center justify-center overflow-hidden  ">
+        <div className="hidden relative md:flex h-[400px] flex-1 flex-col items-center justify-center overflow-hidden  ">
           <OrbitingCircles
             className="size-[30px] border-none bg-transparent"
             duration={20}
