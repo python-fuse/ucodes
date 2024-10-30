@@ -1,21 +1,32 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BsMoon } from "react-icons/bs";
 import Tooltip from "./Tooltip";
 import BlurFade from "./magicui/blur-fade";
 import { handleHoverIn, handleHoverOut, HandB, GLXY } from "../lib/utils";
+import { motion } from "framer-motion";
 
 const Dock = () => {
   const [animate, setAnimate] = useState<boolean>(false);
   const [showToolTip, setShowToolTip] = useState<boolean>(false);
+  const [hideNav, setHideNav] = useState<boolean>(false);
 
   useEffect(() => {
     setAnimate(true);
+    const handleScroll = () => {
+      if (window.scrollY + window.innerHeight === document.body.scrollHeight) {
+        setHideNav(true);
+        setAnimate(false);
+      } else {
+        setHideNav(false);
+        setAnimate(true);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div
-      className={`fixed ${
-        animate ? "navbar-animate" : ""
-      } bottom-4 flex items-center bg-white max-w-[350px] min-w-[350px] h-14 justify-evenly shadow-md rounded-full left-[50%] opacity-0 translate-x-[-50%] border`}
+    <motion.div
+      className={`fixed ${animate ? "navbar-animate" : "navbar-hide"}
+      } bottom-4 flex items-center duration-500 bg-white max-w-[350px] min-w-[350px] h-14 justify-evenly shadow-md rounded-full left-[50%] opacity-0 translate-x-[-50%] border`}
     >
       <div className="flex items-center gap-x-2 border-r-2">
         {HandB.map((item, idx) => (
@@ -71,7 +82,7 @@ const Dock = () => {
           <BsMoon className="nav-icon" />
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
