@@ -9,10 +9,12 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col gap-y-36 my-10 ">
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
+      <div className="flex flex-col gap-y-36 my-10 p-10">
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+      </div>
     </div>
   );
 };

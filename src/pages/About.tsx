@@ -41,7 +41,7 @@ const About: React.FC = () => {
         <div className="h-2 rounded-full bg-primary w-14"></div>
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col-reverse gap-y-4 md:flex-row md:justify-between items-center">
         <p>
           I’m a second-year Computer Science student in Nigeria with experience
           in developing web pages, from simple landing pages to full-stack
