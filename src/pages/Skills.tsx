@@ -4,7 +4,7 @@ import { skills } from "../lib/utils";
 
 const Skills: React.FC = () => {
   return (
-    <div className="flex flex-col space-y-8 ">
+    <div id="skills" className="flex flex-col space-y-8 ">
       <div className="flex flex-col gap-y-2">
         <h2 className="text-2xl">
           My <span className="text-primary">Skills</span>

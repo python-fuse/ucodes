@@ -6,7 +6,7 @@ import { FaGithub, FaNodeJs, FaReact, FaWhatsapp } from "react-icons/fa";
 
 const Projects: React.FC = () => {
   return (
-    <div className="flex flex-col  space-y-4">
+    <div id="projects" className="flex flex-col  space-y-4">
       <div className="flex flex-col gap-y-2">
         <h2 className="text-2xl">
           My <span className="text-primary">Projects</span>

@@ -33,7 +33,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col space-y-5 ">
+    <div id="about" className="flex flex-col space-y-5 ">
       <div className="flex flex-col gap-y-2">
         <h2 className="text-2xl">
           Hey, I'm <span className="text-primary">Umar</span>

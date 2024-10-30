@@ -30,11 +30,12 @@ const Dock = () => {
     >
       <div className="flex items-center gap-x-2 border-r-2">
         {HandB.map((item, idx) => (
-          <button
+          <a
             key={idx}
-            className="m-2  nav-btn relative"
+            className="m-2 cursor-pointer nav-btn relative"
             onMouseEnter={() => handleHoverIn(setShowToolTip)}
             onMouseLeave={() => handleHoverOut(setShowToolTip)}
+            href="#home"
           >
             {showToolTip && (
               <BlurFade inView delay={0.0025} blur={"0px"}>
@@ -42,7 +43,7 @@ const Dock = () => {
               </BlurFade>
             )}
             {item.icon}
-          </button>
+          </a>
         ))}
       </div>
 

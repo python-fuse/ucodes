@@ -2,7 +2,10 @@ import avatar from "../assets/umar.jpg";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row text-start mt-20 mb-14 space-y-4 md:space-x-8 items-center mx-auto">
+      <div
+        id="home"
+        className="flex flex-col md:flex-row text-start mt-20 mb-14 space-y-4 md:space-x-8 items-center mx-auto"
+      >
         <div className="border-2 border-primary rounded-full">
           <img
             src={avatar}
