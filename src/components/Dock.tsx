@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { BsMoon } from "react-icons/bs";
 import Tooltip from "./Tooltip";
 import BlurFade from "./magicui/blur-fade";
@@ -8,16 +8,14 @@ import { motion } from "framer-motion";
 const Dock = () => {
   const [animate, setAnimate] = useState<boolean>(false);
   const [showToolTip, setShowToolTip] = useState<boolean>(false);
-  const [hideNav, setHideNav] = useState<boolean>(false);
+  
 
   useEffect(() => {
     setAnimate(true);
     const handleScroll = () => {
       if (window.scrollY + window.innerHeight === document.body.scrollHeight) {
-        setHideNav(true);
         setAnimate(false);
       } else {
-        setHideNav(false);
         setAnimate(true);
       }
     };
