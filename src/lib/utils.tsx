@@ -5,6 +5,7 @@ import { BsGithub, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
 import { FaCode, FaLaptop, FaMobile, FaServer } from "react-icons/fa";
 import fbn from "../assets/fbncoll.png";
 import studenthub from "../assets/studhub.png";
+import heartbridge from "../assets/hear.png";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -80,6 +81,14 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    title: "Heart Brige",
+    description:
+      "A crowd-funding platform for orphanges.My submission for Appwrite Hackathon 2024",
+    techStack: ["NextJs", "Tailwind CSS", "MUI", "Appwrite"],
+    link: "https://heart-bridge.vercel.app",
+    image: heartbridge,
+  },
   {
     title: "Student Hub",
     description:
