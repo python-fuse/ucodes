@@ -154,4 +154,12 @@ export const experiences = [
       "Worked as a software development intern, focused on building and improving user interfaces. Contributed to fixing bugs and enhancing existing pages to create more functional and visually appealing web experiences.",
     techStack: ["React", "Tailwind CSS", "ChakraUI", "Firebase"],
   },
+  {
+    title: "Software Development Intern",
+    company: "Oasis InfoByte",
+    duration: "July 2022 - October 2022",
+    description:
+      "Worked as a web development intern, building website and user interfaces using HTML,CSS and Javascript.",
+    techStack: ["HTML", "CSS", "Javascript"],
+  },
 ];
