@@ -3,9 +3,12 @@ import { twMerge } from "tailwind-merge";
 import { Book, Home } from "lucide-react";
 import { BsGithub, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
 import { FaCode, FaLaptop, FaMobile, FaServer } from "react-icons/fa";
-import fbn from "../assets/fbncoll.png";
+// import fbn from "../assets/fbncoll.png";
 import studenthub from "../assets/studhub.png";
 import heartbridge from "../assets/hear.png";
+import quackdebug from "../assets/quack.png";
+import miniMe from "../assets/mini.png";
+import tubeBuddy from "../assets/tube.png";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -82,55 +85,113 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Heart Brige",
+    title: "QuackDebug – Voice-Powered Debugging Companion",
     description:
-      "A crowd-funding platform for orphanges.My submission for Appwrite Hackathon 2024",
-    techStack: ["NextJs", "Tailwind CSS", "MUI", "Appwrite"],
+      "A productivity tool that transcribes your spoken thoughts during debugging sessions, inspired by rubber duck debugging. Features voice-to-text transcription, audio recording, and session management to streamline problem-solving.",
+    techStack: ["Next.js", "Tailwind CSS", "Vercel", "Web Speech API"],
+    link: "https://quackdebug.vercel.app",
+    image: quackdebug,
+  },
+  {
+    title: "Mini.me – URL Shortener with Analytics",
+    description:
+      "A customizable full-stack URL shortener with support for dynamic QR codes and real-time click analytics.",
+    techStack: [
+      "Next.js",
+      "PostgreSQL (Prisma)",
+      "Tailwind CSS",
+      "IPAPI",
+      "Auth.js",
+    ],
+    link: "https://mini-me-kappa.vercel.app/",
+    image: miniMe,
+  },
+  {
+    title: "Tube Buddy – YouTube Reminder Tool",
+    description:
+      "A productivity tool that sends daily reminders to watch saved YouTube videos. Built with real-time updates and cron-scheduled emails.",
+    techStack: [
+      "Next.js",
+      "Express.js",
+      "PostgreSQL (Prisma)",
+      "Socket.IO",
+      "Nodemailer",
+      "YouTube API",
+    ],
+    link: "https://tube-buddy.vercel.app",
+    image: tubeBuddy,
+  },
+  {
+    title: "Heart Bridge",
+    description:
+      "A crowd-funding platform for orphanages. Submission for Appwrite Hackathon 2024.",
+    techStack: ["Next.js", "Tailwind CSS", "MUI", "Appwrite"],
     link: "https://heart-bridge.vercel.app",
     image: heartbridge,
   },
   {
     title: "Student Hub",
     description:
-      "A fullstack web application for students to connect and share resources.",
+      "A full-stack web application for students to connect and share resources.",
     techStack: ["React", "Tailwind CSS", "ChakraUI", "Firebase"],
     link: "https://student-hub-beta.vercel.app/",
     image: studenthub,
   },
-  {
-    title: "FirstBank Collection System",
-    description:
-      "A loan collection management system for oldest the bank in Nigeria. I worked as a Frontend Engineer on this Project at Bloocode Technologies",
-    techStack: [
-      "NextJS",
-      "React Query",
-      "Tailwind CSS",
-      "Headless UI",
-      "NextUI",
-    ],
-    link: "https://firstbank-collection-frontend.vercel.app/",
-    image: fbn,
-  },
+  // {
+  //   title: "FirstBank Collection System",
+  //   description:
+  //     "A loan management tool built for First Bank Nigeria. Developed the Loan Customer Management Suite, dashboards, and RBAC system.",
+  //   techStack: [
+  //     "Next.js",
+  //     "React Query",
+  //     "Tailwind CSS",
+  //     "Headless UI",
+  //     "NextUI",
+  //   ],
+  //   link: "https://firstbank-collection-frontend.vercel.app/",
+  //   image: fbn,
+  // },
 ];
 
 export const experiences = [
   {
-    title: "Software Engineer",
-    company: "Upwork",
-    duration: "December 2023 - Present",
+    title: "Software Developer",
+    company: "Payportal",
+    duration: "December 2024 – April 2025",
     description:
-      "Providing freelance software development services on Upwork, specializing in building dynamic web applications. Collaborating with clients globally to deliver high-quality full-stack projects and tailored solutions for their business needs.",
+      "Built and shipped the entire frontend of a batch payment platform using Next.js, TypeScript, Tailwind CSS, and ShadCN. Integrated TanStack Query and Axios for efficient data fetching. Implemented RBAC, dynamic forms, and virtualized tables for 1,000+ records.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ShadCN",
+      "TanStack Query",
+      "Axios",
+      "Redux Toolkit",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company: "uCodes",
+    duration: "January 2024 – Present",
+    description:
+      "Delivered 10+ client projects including automation tools and full-stack web apps. Specialized in building modern, scalable UIs and backend integrations. Built custom tools to reduce manual work by up to 80%.",
+    techStack: [
+      "Next.js",
+      "Express.js",
+      "Tailwind CSS",
+      "Python",
+      "Node.js",
+      "PostgreSQL",
+    ],
   },
   {
     title: "Software Engineer",
     company: "Bloocode Technologies",
-    duration: "June 2024 - Present",
+    duration: "June 2024 – October 2024",
     description:
-      "Contributing as a Frontend Engineer, responsible for creating intuitive and responsive user interfaces. Collaborating closely with cross-functional teams to develop scalable, performant web applications that enhance the user experience.",
+      "Worked on a loan management tool for First Bank Nigeria. Built the Loan Customer Management Suite, dashboards, and modals. Implemented RBAC, protected routes, and analytics.",
     techStack: [
-      // "TypeScript",
-      // "JavaScript",
-      // "React",
       "Next.js",
       "React Query",
       "Tailwind CSS",
@@ -139,27 +200,42 @@ export const experiences = [
     ],
   },
   {
+    title: "Software Engineer",
+    company: "Upwork",
+    duration: "December 2023 – Present",
+    description:
+      "Providing freelance development services globally. Built dashboards, automation tools, and full-stack web apps with a 90% satisfaction rate.",
+    techStack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Express.js",
+      "TypeScript",
+      "MongoDB",
+      "PostgreSQL",
+    ],
+  },
+  {
     title: "Software Development Intern",
     company: "HNGxAfrica",
-    duration: "December 2023 - July 2024",
+    duration: "December 2023 – July 2024",
     description:
-      "Strengthened my software engineering skills by building full-stack web applications as part of a large-scale internship program. Collaborated with interns across various tracks, including UI/UX Design, to deliver complete web solutions from concept to deployment.",
+      "Built full-stack web apps as part of a large-scale internship. Collaborated across tracks to deliver complete solutions.",
     techStack: ["React", "Firebase", "Appwrite", "Tailwind CSS"],
   },
   {
     title: "Software Development Intern",
     company: "Code Alpha",
-    duration: "September 2023 - December 2024",
+    duration: "September 2023 – December 2024",
     description:
-      "Worked as a software development intern, focused on building and improving user interfaces. Contributed to fixing bugs and enhancing existing pages to create more functional and visually appealing web experiences.",
+      "Focused on building and improving UI components. Enhanced performance and functionality across several web pages.",
     techStack: ["React", "Tailwind CSS", "ChakraUI", "Firebase"],
   },
   {
     title: "Software Development Intern",
     company: "Oasis InfoByte",
-    duration: "July 2022 - October 2022",
+    duration: "July 2022 – October 2022",
     description:
-      "Worked as a web development intern, building website and user interfaces using HTML,CSS and Javascript.",
-    techStack: ["HTML", "CSS", "Javascript"],
+      "Built websites and user interfaces using foundational frontend technologies.",
+    techStack: ["HTML", "CSS", "JavaScript"],
   },
 ];
