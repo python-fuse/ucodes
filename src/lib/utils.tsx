@@ -118,7 +118,7 @@ export const projects = [
       "Nodemailer",
       "YouTube API",
     ],
-    link: "https://tube-buddy.vercel.app",
+    link: "https://tubebuddy.vercel.app",
     image: tubeBuddy,
   },
   {
